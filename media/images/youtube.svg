@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" width="22" height="16">
+	<title>Saffola Masala Oats_Landing Page_Desktop_v3</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Saffola Masala Oats_Landing Page_Desktop_v3">
+		<g id="footer">
+			<g id="social icons">
+				<path id="youtube" fill-rule="evenodd" class="shp0" d="M5.65 14.93C2.4 14.71 2.02 12.73 2 7.54C2.02 2.35 2.41 0.38 5.65 0.16C8.65 -0.04 15.34 -0.05 18.34 0.16C21.6 0.38 21.97 2.36 22 7.54C21.97 12.73 21.59 14.71 18.34 14.93C16.85 15.03 14.43 15.09 12.01 15.09C9.6 15.09 7.16 15.03 5.65 14.93ZM9.5 10.9L16.17 7.54L9.5 4.19L9.5 10.9Z" />
+			</g>
+		</g>
+	</g>
+</svg>
