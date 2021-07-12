@@ -537,8 +537,9 @@ section.heroSlider {
 
 .secondSection .ingerdient img {
   position: absolute;
-  left: -1.9rem;
+  left: 0rem;
   top: 1.5rem;
+  width: 10rem;
 }
 
 .secondSection .disclaimer {
