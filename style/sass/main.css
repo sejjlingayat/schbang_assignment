@@ -476,7 +476,7 @@ section.heroSlider {
 }
 
 .secondSection .leftSideSection img {
-  width: 55rem;
+  width: 90%;
 }
 
 .secondSection .rightSideSection {
@@ -538,9 +538,8 @@ section.heroSlider {
 
 .secondSection .ingerdient img {
   position: absolute;
-  left: 0rem;
+  left: -1.9rem;
   top: 1.5rem;
-  width: 10rem;
 }
 
 .secondSection .disclaimer {
@@ -1304,9 +1303,6 @@ section.byNowSticked {
     height: 63rem;
     width: 100%;
   }
-  .secondSection .leftSideSection img {
-    width: 45rem;
-  }
   .secondSection {
     padding: 10rem 6rem;
   }
@@ -1355,9 +1351,6 @@ section.byNowSticked {
   }
   .secondSection .disclaimer {
     margin: 4rem 0rem;
-  }
-  .secondSection .leftSideSection img {
-    width: 35rem;
   }
   .secondSection .rightSideSection h1 {
     font-size: 5rem;
@@ -1412,6 +1405,13 @@ section.byNowSticked {
   }
 }
 
+@media (max-width: 960px) {
+  .leftSideSection {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .menuCont {
     display: block;
@@ -1419,9 +1419,6 @@ section.byNowSticked {
   .leftSideSection {
     width: 35rem;
     height: 35rem;
-  }
-  .secondSection .leftSideSection img {
-    width: 100%;
   }
   header nav .rightSideMenu {
     height: 5rem;
@@ -1465,14 +1462,13 @@ section.byNowSticked {
     margin-top: 5rem;
   }
   .secondSection .leftSideSection img {
-    width: 35rem;
     z-index: 8;
   }
   .secondSection .addOns {
     position: absolute;
-    width: 43rem;
-    top: 58rem;
-    margin: auto;
+    width: 58%;
+    margin-left: 0;
+    top: 45rem;
     height: 11rem;
   }
   .secondSection .redTag {
@@ -1671,9 +1667,6 @@ section.byNowSticked {
   .leftSideSection {
     width: 25rem;
     height: 25rem;
-  }
-  .secondSection .leftSideSection img {
-    width: 100%;
   }
   .secondSection .rightSideSection p.rightDesc {
     width: auto;
