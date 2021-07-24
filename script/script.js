@@ -118,7 +118,7 @@ $(document).ready(function () {
 
     $(".recipeAfter").click(function () {
 
-       var currClass = $(this).parent('.recipeBox').find('.recipeHide');
+       var currClass = $(this).parent('.recipeBoxCommon').find('.recipeHide');
         if ($(this).hasClass("crossAfter")) {
             $(this).removeClass('crossAfter');
             currClass.fadeOut(500);
