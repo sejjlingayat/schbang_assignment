@@ -26,6 +26,11 @@ h2 {
   font-weight: normal;
 }
 
+h1 {
+  font-size: clamp(4rem, 6vw, 6rem);
+  text-align: center;
+}
+
 p,
 a,
 ul,
@@ -439,12 +444,15 @@ section.heroSlider {
 .text {
   font-size: 6rem;
   padding: 5rem;
+  width: 40%;
 }
 
 .text h1 {
   color: #fff;
-  width: 52rem;
+  width: 100%;
   line-height: 1;
+  font-size: clamp(4rem, 6vw, 26rem);
+  text-align: left;
 }
 
 .text p {
@@ -473,29 +481,39 @@ section.heroSlider {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.secondSection .leftSideSection img {
-  width: 90%;
+  height: 40rem;
 }
 
 .secondSection .rightSideSection {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
 }
 
 .secondSection .rightSideSection h1 {
-  font-size: 6rem;
   line-height: 1;
   margin-bottom: 2rem;
 }
 
 .secondSection .rightSideSection p {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.7rem);
   font-weight: 500;
 }
 
 .secondSection .rightSideSection p.rightDesc {
-  width: 44rem;
+  max-width: 44rem;
   margin: auto;
 }
 
@@ -526,7 +544,7 @@ section.heroSlider {
 }
 
 .secondSection .addOnsText {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   font-weight: 500;
   padding: 4rem 3rem 0 10rem;
   width: -webkit-fit-content;
@@ -538,8 +556,9 @@ section.heroSlider {
 
 .secondSection .ingerdient img {
   position: absolute;
-  left: -1.9rem;
+  left: 0.1rem;
   top: 1.5rem;
+  width: 9rem;
 }
 
 .secondSection .disclaimer {
@@ -703,12 +722,22 @@ section.heroSlider {
 }
 
 .leftSideSection {
-  width: 55rem;
-  height: 55rem;
+  width: calc(min(100vw, 39rem));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 40rem;
 }
 
 .leftBg {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------third-section-----------------------------------*/
@@ -741,14 +770,6 @@ section.thirdSection {
 
 .thirdSection .gridCell {
   margin: 1rem;
-}
-
-.thirdSection h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 6rem;
-  width: 30rem;
-  margin: auto;
 }
 
 .thirdSection .topSecLeft {
@@ -853,16 +874,10 @@ section.thirdSection {
   height: 100%;
 }
 
-.topSectionfour h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 6rem;
-}
-
 .topSectionfour .cuisineFilter li {
   display: inline;
   margin: 0rem 2rem;
-  font-size: 1.6rem;
+  font-size: clamp(1rem, 2vw, 1.6rem);
   font-weight: 500;
 }
 
@@ -897,20 +912,19 @@ section.thirdSection {
   width: 33.33%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  position: relative;
 }
 
 .topSectionfour .recipeBox .recipeHide {
   position: absolute;
   z-index: 4;
   top: 0;
+  left: 0;
   background: #fff1be;
-  height: 56rem;
-  width: 95%;
+  height: 100%;
+  width: 100%;
   text-align: left;
   border-radius: 20px;
-  margin: auto;
-  padding: 3rem;
+  padding: 8%;
   display: none;
 }
 
@@ -921,16 +935,18 @@ section.thirdSection {
 }
 
 .topSectionfour .recipeBox .recipeHide p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.topSectionfour .recipeBoxCommon {
+  width: 100%;
+  position: relative;
 }
 
 .topSectionfour .recipe {
   height: 56rem;
-  width: 100%;
   border-radius: 20px;
-  position: relative;
   background-size: cover;
-  background-color: #fcc517;
 }
 
 .topSectionfour .recipe1 {
@@ -965,7 +981,7 @@ section.thirdSection {
   background-repeat: no-repeat;
   background-size: 100%;
   bottom: 0;
-  right: 1.5rem;
+  right: 0;
   height: 5rem;
   width: 5rem;
   z-index: 5;
@@ -1037,9 +1053,6 @@ section.thirdSection {
 }
 
 .bottomSectionfour h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 6rem;
   margin-bottom: 4rem;
 }
 
@@ -1067,6 +1080,20 @@ section.thirdSection {
 
 .bottomSectionfour .foodie {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
 .bottomSectionfour .foodiesWrapper {
@@ -1082,11 +1109,24 @@ section.thirdSection {
 }
 
 .bottomSectionfour .foodieMsg {
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 0.5vw, 2.1rem);
   height: 14rem;
-  padding: 2rem;
   font-weight: 500;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 20rem;
+}
+
+.bottomSectionfour .foodie img {
+  margin-bottom: 1rem;
 }
 
 .bottomSectionfour .foodieMsg::after {
@@ -1095,7 +1135,7 @@ section.thirdSection {
   height: 0.5rem;
   width: 10rem;
   top: 14rem;
-  left: 32%;
+  margin-top: 1rem;
   background-color: var(--yellow-color);
 }
 
@@ -1133,7 +1173,7 @@ section.footerSection .titleSection {
 
 section.footerSection .titleSection h1 {
   color: #fff;
-  font-size: 5rem;
+  text-align: left;
 }
 
 section.footerSection .socialIcons a {
@@ -1149,6 +1189,7 @@ section.footerSection .postContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 section.footerSection .postSliderWrapper {
@@ -1200,9 +1241,12 @@ section.footerSection .postParent {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 25%;
-  width: 25%;
-  height: 25rem;
+  height: 18vw;
   padding: 1rem;
+}
+
+section.footerSection .postChild {
+  height: 100%;
 }
 
 section.footerSection .postSlider {
@@ -1211,19 +1255,21 @@ section.footerSection .postSlider {
 }
 
 section.footerSection .naviButton.navPrev3 {
-  left: 0.6%;
+  left: 0;
   background: url(../../media/images/footerArrowPrev.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 45%;
+  position: absolute;
 }
 
 section.footerSection .naviButton.navNext3 {
-  left: 98%;
+  right: 0;
   background: url(../../media/images/footerArrowNext.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 45%;
+  position: absolute;
 }
 
 .footer {
@@ -1295,10 +1341,6 @@ section.byNowSticked {
 
 /*--------------------------------------Media Queries-----------------------------------*/
 @media (max-width: 1200px) {
-  .text h1 {
-    width: 43rem;
-    font-size: 8.5rem;
-  }
   section.heroSlider {
     height: 63rem;
     width: 100%;
@@ -1345,18 +1387,8 @@ section.byNowSticked {
   .leftSideMenu a img {
     width: 8rem;
   }
-  .text h1 {
-    width: 37rem;
-    font-size: 6.5rem;
-  }
   .secondSection .disclaimer {
     margin: 4rem 0rem;
-  }
-  .secondSection .rightSideSection h1 {
-    font-size: 5rem;
-  }
-  .thirdSection h1 {
-    font-size: 5rem;
   }
   .topSection {
     height: 51rem;
@@ -1388,17 +1420,11 @@ section.byNowSticked {
   .options img {
     width: 5rem;
   }
-  .topSectionfour h1 {
-    font-size: 5rem;
-  }
   .topSectionfour p.recipeName {
     font-size: 3.5rem;
   }
   section.footerSection {
     padding: 6rem 5rem;
-  }
-  .bottomSectionfour h1 {
-    font-size: 5rem;
   }
   .optionsItem {
     padding: 0 22px;
@@ -1407,7 +1433,6 @@ section.byNowSticked {
 
 @media (max-width: 960px) {
   .leftSideSection {
-    width: 100%;
     height: auto;
   }
 }
@@ -1415,10 +1440,6 @@ section.byNowSticked {
 @media (max-width: 768px) {
   .menuCont {
     display: block;
-  }
-  .leftSideSection {
-    width: 35rem;
-    height: 35rem;
   }
   header nav .rightSideMenu {
     height: 5rem;
@@ -1429,10 +1450,11 @@ section.byNowSticked {
   .secondSection {
     width: 100%;
     padding: 7rem 3rem;
+    position: relative;
   }
   .secondSection .secondTop {
     width: 100%;
-    height: 60rem;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1443,33 +1465,32 @@ section.byNowSticked {
   }
   .secondSection .addOnsText {
     padding: 5rem 3rem 0 10rem;
-    font-size: 1.4rem;
+    height: 10rem;
   }
   .secondTop .leftSideSection {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    z-index: 3;
-    position: relative;
-  }
-  .secondSection .rightSideSection {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    z-index: 3;
+    margin-top: 30%;
   }
-  .secondTop .leftSideSection {
-    margin: auto;
-    margin-top: 5rem;
+  .flavourDesc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12%;
+  }
+  .secondSection .rightSideSection {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .secondSection .leftSideSection img {
     z-index: 8;
   }
   .secondSection .addOns {
-    position: absolute;
-    width: 58%;
-    margin-left: 0;
-    top: 45rem;
-    height: 11rem;
+    margin-top: -4rem;
   }
   .secondSection .redTag {
     position: absolute;
@@ -1486,14 +1507,6 @@ section.byNowSticked {
   .options p {
     font-size: 1.4rem;
     padding: 1rem;
-  }
-  .thirdSection h1,
-  .secondSection .rightSideSection h1,
-  .topSectionfour h1 {
-    font-size: 5rem;
-  }
-  .thirdSection h1 {
-    width: 50rem;
   }
   .thirdSection .bottomSection h1 {
     width: 30rem;
@@ -1598,8 +1611,12 @@ section.byNowSticked {
     left: 40%;
   }
   .text {
-    font-size: 6rem;
     padding: 8rem;
+    width: 100%;
+  }
+  .text h1 {
+    text-align: center;
+    font-size: 11vw;
   }
   .optionsItem {
     padding: 0 8px;
@@ -1628,14 +1645,6 @@ section.byNowSticked {
     height: 100%;
     width: 100%;
   }
-  section.footerSection .naviButton.navPrev3 {
-    left: -1%;
-    top: 35%;
-  }
-  section.footerSection .naviButton.navNext3 {
-    left: 99%;
-    top: 35%;
-  }
   .naviButton.navNext {
     top: 28%;
     left: 100%;
@@ -1646,7 +1655,12 @@ section.byNowSticked {
   }
   .topSectionfour .recipeBox .recipeHide {
     padding: 1.5rem;
-    width: 90%;
+  }
+  .topSectionfour .recipeBox .recipeHide p {
+    font-size: 1.3rem;
+  }
+  .topSectionfour .recipeBox .recipeHide h3 {
+    font-size: 2rem;
   }
   section.byNowSticked {
     display: block;
@@ -1658,24 +1672,20 @@ section.byNowSticked {
   section.footerSection .naviButton.navPrev3 {
     top: 48%;
   }
+  .footer {
+    margin-bottom: 9rem;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .menuCont {
     display: block;
   }
-  .leftSideSection {
-    width: 25rem;
-    height: 25rem;
-  }
   .secondSection .rightSideSection p.rightDesc {
     width: auto;
-    font-size: 1.3rem;
   }
   .secondSection .addOns {
     width: 100%;
-    left: 0;
-    top: 57rem;
   }
   .optionsItem {
     padding: 0 8px;
@@ -1713,12 +1723,6 @@ section.byNowSticked {
   .topSectionfour {
     padding: 10rem 3rem;
   }
-  .thirdSection h1,
-  .secondSection .rightSideSection h1,
-  .topSectionfour h1,
-  .bottomSectionfour h1 {
-    font-size: 4rem;
-  }
   .topSectionfour .recipeBox {
     width: 100%;
     height: 56rem;
@@ -1743,7 +1747,6 @@ section.byNowSticked {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    font-size: 3rem;
   }
   .socialIcons {
     -webkit-box-ordinal-group: 3;
@@ -1759,13 +1762,6 @@ section.byNowSticked {
   }
   section.heroSlider {
     height: 57rem;
-  }
-  .text h1 {
-    font-size: 4.5rem;
-    width: 34rem;
-  }
-  .bottomSectionfour .foodieMsg {
-    font-size: 1.3rem;
   }
   section.footerSection .postParent {
     width: 33.33%;
@@ -1815,15 +1811,6 @@ section.byNowSticked {
   section.footerSection .postContainer {
     height: 26rem;
   }
-  .topSectionfour .recipeBox .recipeHide {
-    width: 92%;
-  }
-  .recipeAfter.crossAfter {
-    right: 1.4em;
-  }
-  .thirdSection h1 {
-    width: 30rem;
-  }
   .text {
     font-size: 6rem;
     padding: 8rem 3rem;
@@ -1861,10 +1848,6 @@ section.byNowSticked {
   .menuCont {
     display: block;
   }
-  .leftSideSection {
-    width: 25rem;
-    height: 25rem;
-  }
   .secondSection .leftSideSection img {
     width: 100%;
   }
@@ -1882,10 +1865,6 @@ section.byNowSticked {
   }
   .text {
     padding: 5rem 3rem;
-  }
-  .text h1 {
-    font-size: 4rem;
-    width: 34rem;
   }
   .naviButton.navNext1 {
     left: 93%;
@@ -1940,10 +1919,6 @@ section.byNowSticked {
   .menuCont {
     display: block;
   }
-  .leftSideSection {
-    width: 25rem;
-    height: 25rem;
-  }
   .secondSection .leftSideSection img {
     width: 100%;
   }
@@ -1958,19 +1933,10 @@ section.byNowSticked {
     padding: 0 8px;
     width: 100%;
   }
-  .text h1 {
-    font-size: 3rem;
-    width: 90%;
-  }
   .secondSection .addOnsText {
     width: 100%;
     left: 0;
     top: 57rem;
-  }
-  .secondSection .addOns {
-    width: 100%;
-    left: 0;
-    top: 52rem;
   }
   .thirdSection .topSection {
     height: 93rem;
@@ -1979,13 +1945,6 @@ section.byNowSticked {
     font-size: 0.9rem;
     line-height: 1.5;
     margin-left: 2rem;
-  }
-  .thirdSection h1,
-  .secondSection .rightSideSection h1,
-  .topSectionfour h1,
-  .bottomSectionfour h1 {
-    font-size: 2rem;
-    width: 90%;
   }
   .text p {
     font-size: 1.5rem;
@@ -2032,9 +1991,6 @@ section.byNowSticked {
   section.footerSection .naviButton.navNext3,
   section.footerSection .naviButton.navPrev3 {
     top: 45%;
-  }
-  section.footerSection .naviButton.navNext3 {
-    left: 97%;
   }
 }
 /*# sourceMappingURL=main.css.map */
